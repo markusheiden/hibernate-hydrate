@@ -19,7 +19,7 @@ public class SubPlan {
 
 	@ManyToMany
 	@Fetch(FetchMode.SUBSELECT)
-	@Cascade(value = { CascadeType.SAVE_UPDATE, CascadeType.DELETE })
+	@Cascade(value = { CascadeType.PERSIST, CascadeType.REMOVE })
 	private List<Event> events = new ArrayList<Event>();
 
 	public Integer getId() {
