@@ -97,10 +97,10 @@
     <!-- Version of maven plugins -->
     <version.plugin.maven-compiler-plugin>3.14.0</version.plugin.maven-compiler-plugin>
     <version.plugin.maven-eclipse-plugin>2.10</version.plugin.maven-eclipse-plugin>
-    <version.plugin.maven-gpg-plugin>3.2.7</version.plugin.maven-gpg-plugin>
+    <version.plugin.maven-gpg-plugin>1.6</version.plugin.maven-gpg-plugin>
     <version.plugin.maven-central-publishing>0.7.0</version.plugin.maven-central-publishing>
     <version.plugin.maven-javadoc-plugin>3.11.2</version.plugin.maven-javadoc-plugin>
-    <version.plugin.maven-release-plugin>3.1.1</version.plugin.maven-release-plugin>
+    <version.plugin.maven-release-plugin>2.5.3</version.plugin.maven-release-plugin>
     <version.plugin.maven-resources-plugin>3.3.1</version.plugin.maven-resources-plugin>
     <version.plugin.maven-source-plugin>3.3.1</version.plugin.maven-source-plugin>
     <version.plugin.maven-surefire-plugin>3.5.3</version.plugin.maven-surefire-plugin>
@@ -326,9 +326,27 @@
     </profile>
 
     <profile>
+      <id>hibernate-6.5</id>
+      <properties>
+        <version.hibernate>6.5.3.Final</version.hibernate>
+      </properties>
+    </profile>
+    <profile>
+      <id>hibernate-6.4</id>
+      <properties>
+        <version.hibernate>6.4.10.Final</version.hibernate>
+      </properties>
+    </profile>
+    <profile>
+      <id>hibernate-6.3</id>
+      <properties>
+        <version.hibernate>6.3.2.Final</version.hibernate>
+      </properties>
+    </profile>
+    <profile>
       <id>hibernate-6.2</id>
       <properties>
-        <version.hibernate>6.2.4.Final</version.hibernate>
+        <version.hibernate>6.2.36.Final</version.hibernate>
       </properties>
     </profile>
     <profile>
