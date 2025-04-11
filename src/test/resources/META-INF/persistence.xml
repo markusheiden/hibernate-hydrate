@@ -15,6 +15,10 @@
     <class>com.javaetmoi.core.persistence.hibernate.domain.Passport</class>
     <class>com.javaetmoi.core.persistence.hibernate.domain.Person</class>
     <class>com.javaetmoi.core.persistence.hibernate.domain.Project</class>
+    <class>com.javaetmoi.core.persistence.hibernate.joinInheritance.Data</class>
+    <class>com.javaetmoi.core.persistence.hibernate.joinInheritance.ParentClass</class>
+    <class>com.javaetmoi.core.persistence.hibernate.joinInheritance.ParentReference</class>
+    <class>com.javaetmoi.core.persistence.hibernate.joinInheritance.SubClass</class>
     <class>com.javaetmoi.core.persistence.hibernate.listWithEmbeddable.Event</class>
     <class>com.javaetmoi.core.persistence.hibernate.listWithEmbeddable.Plan</class>
     <class>com.javaetmoi.core.persistence.hibernate.listWithEmbeddable.SubPlan</class>
