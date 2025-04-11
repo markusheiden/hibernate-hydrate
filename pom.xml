@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.javaetmoi.core</groupId>
-  <version>6.3.5-SNAPSHOT</version>
-  <artifactId>javaetmoi-hibernate6-hydrate</artifactId>
+  <version>7.0.0-SNAPSHOT</version>
+  <artifactId>javaetmoi-hibernate7-hydrate</artifactId>
   <name>JavaEtMoi Core :: ${project.artifactId}</name>
   <packaging>jar</packaging>
   <description>Avoid Hibernate LazyInitializationException by recursively resolving proxy (support Hibernate 6.x)</description>
@@ -76,20 +76,19 @@
     <!-- Encoding of sources -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.release>17</maven.compiler.release>
 
     <!-- Version of third libraries -->
     <!-- * Hibernate dependencies -->
     <!-- * Last Hibernate supported version  -->
-    <version.hibernate>6.6.12.Final</version.hibernate>
+    <version.hibernate>7.0.0.Beta5</version.hibernate>
 
     <!-- * For testing purpose -->
     <version.assertj>3.27.3</version.assertj>
     <version.commons-lang3>3.17.0</version.commons-lang3>
     <version.dbunit>3.0.0</version.dbunit>
     <version.h2>2.3.232</version.h2>
-    <version.junit>5.11.4</version.junit>
+    <version.junit>5.12.1</version.junit>
     <version.logback>1.5.18</version.logback>
     <version.mockito>5.16.1</version.mockito>
     <version.unitils>3.4.6</version.unitils>
@@ -323,37 +322,6 @@
 
     <profile>
       <id>last</id>
-    </profile>
-
-    <profile>
-      <id>hibernate-6.5</id>
-      <properties>
-        <version.hibernate>6.5.3.Final</version.hibernate>
-      </properties>
-    </profile>
-    <profile>
-      <id>hibernate-6.4</id>
-      <properties>
-        <version.hibernate>6.4.10.Final</version.hibernate>
-      </properties>
-    </profile>
-    <profile>
-      <id>hibernate-6.3</id>
-      <properties>
-        <version.hibernate>6.3.2.Final</version.hibernate>
-      </properties>
-    </profile>
-    <profile>
-      <id>hibernate-6.2</id>
-      <properties>
-        <version.hibernate>6.2.36.Final</version.hibernate>
-      </properties>
-    </profile>
-    <profile>
-      <id>hibernate-6.1</id>
-      <properties>
-        <version.hibernate>6.1.7.Final</version.hibernate>
-      </properties>
     </profile>
   </profiles>
 
